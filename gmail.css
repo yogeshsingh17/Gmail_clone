@@ -1,0 +1,305 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.navigation .navigation_bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.navigation .navigation_bar div:hover
+{
+    cursor: pointer;
+}
+
+/* Navigation bar logo */
+
+.navigation .navigation_bar .navigation_bar_logo a
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+.navigation_bar_logo_bars
+{
+    margin-right: 15px;
+}
+
+/* Search bar */
+
+.navigation_bar_search_bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(204, 204, 244, 0.2);
+    flex: 0.7;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.navigation_bar_search_bar .navigation_bar_search_bar_area_form
+{
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+/* Account details */
+
+.navigation_bar_account_details
+{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.navigation_bar_account_details svg
+{
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 10px;
+}
+
+/* Sidebar styling */
+
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    height: 100vh;
+    padding: 15px;
+    flex: 0.27;
+}
+
+.sidebar_items_first
+{
+    margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(204, 204, 244, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 150px;
+    font-size: large;
+}
+
+.sidebar_items_first span
+{
+    margin-left: 10px;
+}
+
+.sidebar_items_first:hover
+{
+    box-shadow: 0px 0px 4px black;
+}
+
+.sidebar .sidebar_items
+{
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    width: auto;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+
+.sidebar_items:hover, .sidebar_items_last:hover
+{
+    background-color: rgba(204, 204, 244, 0.4);
+    cursor: pointer;
+}
+
+.sidebar_items span
+{
+    margin-left: 10px;
+}
+
+.sidebar_items_last
+{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    width: auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+/* Mails styling */
+
+main
+{
+    display: flex;
+    /* height: 100vh; */
+}
+
+.mails
+{
+    margin: 0 20px;
+    flex: 1;
+    height: auto;
+}
+
+.mails_refresh
+{
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px solid whitesmoke; */
+}
+
+.mails_refresh_left
+{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    /* cursor: pointer; */
+}
+
+.mails_refresh_left div
+{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+
+.mails_refresh_left div:last-child
+{
+    /* padding: 10 5px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mails_refresh_left div:hover
+{
+    background-color: rgba(204, 204, 244, 0.4);
+}
+
+.mails_refresh_left_checklist .fa-solid.fa-angle-down
+{
+    margin-left: 5px;
+}
+
+.mails_refresh_right
+{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mails_refresh_right i
+{
+    /* padding: 0 5px; */
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.mails_refresh_right i:hover
+{
+    background-color: rgba(204, 204, 244, 0.4);
+}
+
+.mails_refresh_right .fa-solid.fa-angle-left
+{
+    margin-right: 30px;
+}
+
+.mails_category
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 10px;
+}
+
+.mails_category_items
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.mails_category_items:hover
+{
+    background-color: rgba(204, 204, 244, 0.4);
+    border-bottom: 2px solid rgb(122, 122, 219);
+    cursor: pointer;
+}
+
+.mails_category_items span
+{
+    margin-left: 15px;
+    font-size: large;
+}
+
+/* Mails received styling */
+
+.mails_received
+{
+    margin: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.mails_received:last-child
+{
+    margin-bottom: 30px;
+}
+
+.mails_received:hover
+{
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    background-color: rgba(204, 204, 244, 0.4);
+}
+
+.mails_received .mails_received_details
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mails_received .mails_received_details div:first-child, .mails_received .mails_received_details div:last-child
+{
+    display: flex;
+    align-items: center;
+}
+
+.mails_received .mails_received_details div .fa-regular.fa-star
+{
+    margin-left: 10px;
+}
+
+.sender_name
+{
+    display: flex;
+    flex: 0.25;
+    font-size: large;
+}
+
+.mail_content
+{
+    display: flex;
+    flex: 0.7;
+    font-size: large;
+}
